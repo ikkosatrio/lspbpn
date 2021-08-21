@@ -15,10 +15,10 @@
           <table class="table table-striped table-responsive" id="table_id">
             <thead>
               <tr>
-                <th>No</th>
+                <th style="width: 5%;">No</th>
                 <th>Nama</th>
-                <th>Tanggal</th>
-                <th>Action</th>
+                <th style="width: 10%;">Tanggal</th>
+                <th style="width: 5%;">Action</th>
               </tr>
             </thead>
             <tbody>
@@ -27,7 +27,7 @@
                 <td>{{$key+1}}</td>
                 <td>{{$item->name}}</td>
                 <td>{{ $item->date_event->format('d-M-Y') }}</td>
-                <th><a href="{{route('event.detail',$item->id)}}"><button class="btn btn-primary">Lihat</button></a></th>
+                <th><a href="{{route('event.detail',$item->id)}}"><button class="btn btn-dark border_radius">Lihat</button></a></th>
               </tr>
               @endforeach
             </tbody>
